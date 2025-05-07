@@ -85,7 +85,7 @@
                 const data = await response.json();
                 if (data.data && data.data.length > 0 && data.data[0].imageUrl) {
                     const newUrl = data.data[0].imageUrl;
-                    if (newUrl && newUrl !== 'https://via.placeholder.com/150x150?text=No+Image') {
+                    if (newUrl && newUrl !== 'https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/3/2/e/32e912a3cacdd4788a54ea733ae424571d7823a2.png') {
                         imgElement.src = newUrl;
                         return;
                     }
