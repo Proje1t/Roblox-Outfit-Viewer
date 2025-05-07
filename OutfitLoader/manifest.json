@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Outfit Loader",
+  "version": "2.0",
+  "description": "View anyone's Roblox Outfits on the Website",
+  "author": "Proje1t",
+  "permissions": [
+    "activeTab",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://www.roblox.com/*",
+    "https://avatar.roblox.com/*",
+    "https://thumbnails.roblox.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.roblox.com/users/*/profile*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
